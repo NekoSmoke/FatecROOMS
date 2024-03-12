@@ -1,13 +1,17 @@
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
 
 public class OpcoesJOptionPane {
     public static void main(String[] args) {
         // Opções a serem exibidas no JOptionPane
         Object[] opcoes = {"Capitulo 0", "Capitulo 1","Capítulo ???"};
-        Object[] dialog1 = {"Meu nome é Darko, agora sua vez", "Antes de tudo me explica o que caralhos tá acontecendo."};
+        Object[] dialog = {"Meu nome é Darko, agora sua vez", "Antes de tudo me explica o que caralhos tá acontecendo."};
         String cap;
         int British;
-
+            ImageIcon NH3 = new ImageIcon("nah3.png");
+            ImageIcon NH4 = new ImageIcon("nah4.png");
+            ImageIcon PRM = new ImageIcon("PARMA.png");
+            ImageIcon PRM5 = new ImageIcon("PARMA50.png");
 
         // Exibe o JOptionPane com as opções
         int escolha = JOptionPane.showOptionDialog(
@@ -15,7 +19,7 @@ public class OpcoesJOptionPane {
             "Escolha um Capítulo para jogar:",      // Mensagem
             "Seleção de Capítulo",         // Título da janela
             JOptionPane.DEFAULT_OPTION,     // Tipo de opção (usando o padrão)
-            JOptionPane.PLAIN_MESSAGE,  // Tipo de mensagem (pergunta)
+            JOptionPane.INFORMATION_MESSAGE,  // Tipo de mensagem (pergunta)
             null,                           // Ícone personalizado (neste caso, nenhum)
             opcoes,                         // Opções disponíveis
             opcoes[0]);                     // Opção padrão selecionada (nesse caso, "Capitulo 0")
@@ -24,29 +28,22 @@ public class OpcoesJOptionPane {
         switch (escolha) {
             case 0: // Capitulo 0
                 JOptionPane.showMessageDialog(null, "Ao ler e progredir com os textos, você irá usar pastas para descobrir imagens e adquirir códigos para progredir com os capítulos",
-                 "Como jogar", JOptionPane.INFORMATION_MESSAGE);
-
-                 //explicação sobre as pastas
-                JOptionPane.showMessageDialog(null, "PASTAS: Ao descobrir uma imagem nova, o nome do capitulo vai deixar de ser: \n" + 
-                    " CAPÍTULO 2 \n" + " ele passará a se chamar:\n" + " CAPÍTULO 2 - LQWUR. \n",
-                    "Como jogar - Pastas", JOptionPane.INFORMATION_MESSAGE);
-                JOptionPane.showMessageDialog(null, "isso significa que no explorador de arquivos, a pasta LQWUR será usada em determinado momento para lhe informar através\n " +
-                 "de uma imagem uma situação mais detalhada, e você verá que a imagem possui em seu código outro conjunto de letras (SDU)", "Pastas - Imagens",
-                 JOptionPane.INFORMATION_MESSAGE);
-                //exemplos
-                JOptionPane.showMessageDialog(null,"Exemplo:\n > FTC > Caps > LQWUR > SDU", "Pastas - Exemplo", JOptionPane.INFORMATION_MESSAGE);
-
+                 "Como jogar", JOptionPane.INFORMATION_MESSAGE, NH3);
                 //explicação sobre os codigos
                 JOptionPane.showMessageDialog(null, "CÓDIGOS: Ao finalizar certos capítulos através de escolhas ou pelo decorrer da história, serão\n" +
                 "apresentados códigos numéricos que o guiarão para qual é o próximo capítulo da história, o \n" +
                 "que também permite que você volte em certos pontos para prosseguir de maneiras diferentes e conseguir finais alternativos.", 
-                "Como jogar - Códigos", JOptionPane.INFORMATION_MESSAGE);
+                "Como jogar - Códigos", JOptionPane.INFORMATION_MESSAGE,NH3);
                 //exemplos
                 JOptionPane.showMessageDialog(null, "Exemplo:\n" +
-                "Seleção de Capítulo > Capítulo ??? > 11221200", "Códigos - Exemplo", JOptionPane.INFORMATION_MESSAGE);
+                "Seleção de Capítulo > Capítulo ??? > 11221200", "Códigos - Exemplo", JOptionPane.INFORMATION_MESSAGE, NH4);
 
             case 1: // Capitulo 1
-                JOptionPane.showMessageDialog(null,
+            JOptionPane.showMessageDialog(null,
+            "CAPÍTULO 1 - INTRO"
+           , "CAPÍTULO 1", JOptionPane.INFORMATION_MESSAGE);   
+            
+            JOptionPane.showMessageDialog(null,
                  "Antes de descobrir a jornada e os horrores que está a presenciar, primeiro deverias saber quem és."+
                 "\nVocê é um mero estudante de ADS no período noturno na FATEC Rubens Lara, uma faculdade de\n" +
                 "tecnologia na baixada Santista, SP, Brasil."
@@ -93,23 +90,28 @@ public class OpcoesJOptionPane {
 
                       JOptionPane.showMessageDialog(null,
                       "Você começa a tentar relacionar sua presença a esse local, porém nenhuma peça se encaixava, "+
-                      "\nse você estava dormindo, como foi parar na entrada? E como fecharam a entrada com você "+
-                      "\nperto? Quem te trouxe aqui? O que querem com voc-", "CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE);
+                      "\ncomo você foi parar na entrada? E como fecharam a entrada com você "+
+                      "\ndentro? Quem te trouxe aqui? O que querem com voc-", "CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE);
 
                       JOptionPane.showMessageDialog(null,
                       "De repente uma figura surge, sua presença não é hostil, pelo contrário, ela parece \n"+
-                      "compreender sua confusão silenciosa e se aproxima calmamente para aconchega-lo"+
-                        "\n\n LQWUR"
-                      ,"CAPÍTULO 2 - LQWUR", JOptionPane.PLAIN_MESSAGE);
+                      "compreender sua confusão silenciosa e se aproxima calmamente para aconchega-lo,\n sua presença de certo modo é familiar a você, mas. .  . \n não sabe dizer como..."
+                      ,"CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE, PRM5);
 
-                     JOptionPane.showOptionDialog(null,                           // Componente pai (null para centralizar na tela)
-                      "-Você está bem? Qual seu nome?",      // Mensagem
-                      "CAPÍTULO 2 - LQWUR",         // Título da janela
-                      JOptionPane.DEFAULT_OPTION,     // Tipo de opção (usando o padrão)
-                      JOptionPane.PLAIN_MESSAGE,  // Tipo de mensagem (pergunta)
-                      null,                           // Ícone personalizado (neste caso, nenhum)
-                      dialog1,                         // Opções disponíveis
-                      dialog1[9]);
+                      int SODA = JOptionPane.showOptionDialog(
+                        null,                           // Componente pai (null para centralizar na tela)
+                        "-Você está bem? Qual seu nome?",      // Mensagem
+                        "CAPÍTULO 2",         // Título da janela
+                        JOptionPane.DEFAULT_OPTION,     // Tipo de opção (usando o padrão)
+                        JOptionPane.QUESTION_MESSAGE,  // Tipo de mensagem (pergunta)
+                        PRM,                           // Ícone personalizado (neste caso, nenhum)
+                        dialog,                         // Opções disponíveis
+                        dialog[1]);
+
+                    switch (SODA) {
+
+
+                      }
                 }
                 else if(British == 0){
 
