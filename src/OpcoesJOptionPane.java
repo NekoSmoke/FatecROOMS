@@ -109,7 +109,7 @@ public class OpcoesJOptionPane {
                         dialog[1]);
 
                     switch (SODA) {
-
+                            //temq  colocar as opções diferentes 
 
                       }
                 }
