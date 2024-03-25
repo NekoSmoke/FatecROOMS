@@ -11,7 +11,8 @@ public class OpcoesJOptionPane {
             ImageIcon NH3 = new ImageIcon("nah3.png");
             ImageIcon NH4 = new ImageIcon("nah4.png");
             ImageIcon PRM = new ImageIcon("PARMA.png");
-            ImageIcon PRM5 = new ImageIcon("PARMA50.png");
+            ImageIcon PRM5 = new ImageIcon("PARMA50'.png");
+            ImageIcon FTfr = new ImageIcon("FatecFRFR2.png");
 
         // Exibe o JOptionPane com as opções
         int escolha = JOptionPane.showOptionDialog(
@@ -47,17 +48,17 @@ public class OpcoesJOptionPane {
                  "Antes de descobrir a jornada e os horrores que está a presenciar, primeiro deverias saber quem és."+
                 "\nVocê é um mero estudante de ADS no período noturno na FATEC Rubens Lara, uma faculdade de\n" +
                 "tecnologia na baixada Santista, SP, Brasil."
-                , "CAPÍTULO 1", JOptionPane.INFORMATION_MESSAGE);
+                , "CAPÍTULO 1", JOptionPane.INFORMATION_MESSAGE, FTfr);
                 JOptionPane.showMessageDialog(null,
                 "Entretanto é isso que você acha. de uns tempos após o começo de seu curso você notou\n"+
                  "coisas estranhas na faculdade,desde os corredores piscando de forma críptica até barulhos\n"+
                  "medonhos vindo de dentro dos dutos de ar, em meses você pode confirmar a si mesmo:\n"+
                  "essa faculdade é assombrada, ou maluca, ou qualquer outro adjetivo para seu desconhecimento,\n"+
                  "mas esse lugar não é natural.\nVocê não faz ideia do que o aguarda dentro dos andares escuros, e deseja nunca saber..."               
-               , "CAPÍTULO 1", JOptionPane.INFORMATION_MESSAGE);
+               , "CAPÍTULO 1", JOptionPane.INFORMATION_MESSAGE, FTfr);
                JOptionPane.showMessageDialog(null,
                  "Até eles desejarem saber quem é você...\n E foi nesse dia que tudo começou a mudar...\n \n [11221200]"
-                , "CAPÍTULO 1 - END", JOptionPane.INFORMATION_MESSAGE);
+                , "CAPÍTULO 1 - END", JOptionPane.PLAIN_MESSAGE);
             case 2:
             cap = 
                     JOptionPane.showInputDialog(
