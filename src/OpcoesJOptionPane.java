@@ -12,7 +12,10 @@ public class OpcoesJOptionPane {
             ImageIcon NH4 = new ImageIcon("nah4.png");
             ImageIcon PRM = new ImageIcon("PARMA.png");
             ImageIcon PRM5 = new ImageIcon("PARMA50'.png");
+            ImageIcon PRM50 = new ImageIcon("PARMA50.png");
             ImageIcon FTfr = new ImageIcon("FatecFRFR2.png");
+            ImageIcon SUI = new ImageIcon("DespairSU.png");
+            ImageIcon SHK = new ImageIcon("ShikNa.png");
 
         // Exibe o JOptionPane com as opções
         int escolha = JOptionPane.showOptionDialog(
@@ -74,8 +77,7 @@ public class OpcoesJOptionPane {
                      "Foi uma noite comum no seu curso noturno, com aulas entediantes e monótonas, tão "+
                      "\nmonótonas de fato que você adormeceu na última aula, você não soube na hora, porém nesse"+
                      "\n momento o seu subconsciente e a própria FATEC se entrelaçaram, fazendo o seu corpo"+
-                     "\n adormecer por um longo período, o que traria a você a momentaneamente se fundir com o "+
-                     "\nedifício, fazendo ele te transporta e expelir após horas na entrada."                     
+                     "\n adormecer por um longo período, mas a questão é como você acordou na porta?"                     
                      , "CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE);
                      
                      JOptionPane.showMessageDialog(null,
@@ -110,16 +112,50 @@ public class OpcoesJOptionPane {
                         dialog[1]);
 
                     switch (SODA) {
-                            //temq  colocar as opções diferentes 
+                        case 0: //Meu nome é Darko, agora sua vez
+                        JOptionPane.showMessageDialog(null,
+                        "Prazer, meu nome é Darko, estudo na Fatec, e você? Quem é e o que faz da vida"
+                        , "CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE,SHK);
+                            break;
+                        case 1://Antes de tudo me explica o que caralhos tá acontecendo.
+                        JOptionPane.showMessageDialog(null,
+                        "-Não precisa de tanta grosseria, eu não mordo nem bato. \n Imagino que esteja confuso mas cavalherismo é algo que deve sempre levar com você"
+                        , "CAPÍTULO 2", JOptionPane.PLAIN_MESSAGE,PRM50);
+                            break;
+
+                                default:
+                                        JOptionPane.showMessageDialog(null,
+                                "Você nunca viu uma mulher antes na vida, com medo você engasga com a sua própria saliva e morre."
+                                , "CAPÍTULO 2 - Final Broxa", JOptionPane.ERROR_MESSAGE);
+
 
                       }
                 }
                 else if(British == 0){
-
-
+                    JOptionPane.showMessageDialog(null,
+                      "Você presume que tudo o que está acontecendo é um sonho ruim, \n"+
+                      "um delírio, uma droga alucinogena. Você permanece parado a ponto de \n forçar o seu cérebro a parar de pensar, para de sentir...\n não tem escape para o terror..."
+                      ,"", JOptionPane.WARNING_MESSAGE);
+                      JOptionPane.showMessageDialog(null,
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n" +
+                      "SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO SUICIDIO É SEMPRE UMA OPÇÃO \n"
+                    ,"", JOptionPane.PLAIN_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "",  "Ending 0 - DESPAIR", JOptionPane.PLAIN_MESSAGE, SUI);
                 }
                 else {
-                    JOptionPane.showMessageDialog(null, "and the cum monster",  "now this is epic", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Código Inválido",  "Seleção de Capítulo - ERRO", JOptionPane.ERROR_MESSAGE);
                 }
                 break;
             default:
